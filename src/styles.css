@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+:root {
+  --pastel-blue: #8ab4f8;
+  --pastel-purple: #c792ea;
+  --pastel-green: #81c995;
+  --pastel-orange: #f7a072;
+}
+
+.highlight-blue {
+  color: var(--pastel-blue);
+}
+
+.highlight-purple {
+  color: var(--pastel-purple);
+}
+
+.highlight-green {
+  color: var(--pastel-green);
+}
+
+.highlight-orange {
+  color: var(--pastel-orange);
+}

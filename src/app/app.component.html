@@ -1,0 +1,10 @@
+<body class="m-4">
+  <p-menubar [model]="menuItems">
+    <p-button
+      label="Resume"
+      [style]="{ background: '#b2c8d8', border: 0 }"
+      (click)="downloadCV()"
+    ></p-button>
+  </p-menubar>
+  <router-outlet />
+</body>

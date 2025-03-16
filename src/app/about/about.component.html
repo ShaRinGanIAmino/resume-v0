@@ -1,0 +1,57 @@
+<body class="my-4 text-[12px] md:text-3xl leading-6 md:leading-12">
+  <p-panel
+    header="Software Engineer | Full-Stack Developer | Problem Solver"
+    [toggleable]="true"
+    [collapsed]="false"
+  >
+    <p class="text-[#b2c8d8]">
+      Hi, I’m <span class="highlight-blue">Chebbah Mohamed Amine</span>! I’m a
+      <span class="highlight-purple">Software Engineer</span> based in Tunis,
+      Tunisia, passionate about building
+      <span class="highlight-green">high-quality digital solutions</span>. With
+      a <span class="highlight-orange">Software Engineering degree</span> from
+      the
+      <span class="highlight-blue"
+        >Higher Institute of Applied Science and Technology of Sousse</span
+      >, I specialize in
+      <span class="highlight-purple">full-stack development</span>,
+      <span class="highlight-green">system design</span>, and
+      <span class="highlight-orange">software architecture</span>. Over the
+      years, I’ve worked with <span class="highlight-blue">startups</span>,
+      <span class="highlight-purple">agencies</span>, and
+      <span class="highlight-orange">corporations</span>,
+      <span class="highlight-green">enhancing applications</span>,
+      <span class="highlight-purple">optimizing workflows</span>, and improving
+      <span class="highlight-green">user experiences</span>. From designing
+      <span class="highlight-orange">high-performance web applications</span> to
+      developing <span class="highlight-green">scalable SaaS platforms</span>, I
+      thrive in solving
+      <span class="highlight-purple">complex problems</span> and delivering
+      <span class="highlight-green">intuitive user-centric solutions</span>.
+      When I’m not coding, I’m either
+      <span class="highlight-blue">mentoring future developers</span>, exploring
+      the latest in <span class="highlight-purple">UI/UX trends</span>, or
+      refining my expertise in
+      <span class="highlight-orange">Java, Angular</span>, and
+      <span class="highlight-green">cloud-based architectures</span>.
+    </p>
+  </p-panel>
+  <section class="h-4/6 mt-4">
+    <p-galleria
+      [value]="images"
+      [showIndicators]="true"
+      [showThumbnails]="false"
+      [autoPlay]="true"
+      [circular]="true"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template #item let-item>
+        <img
+          [src]="item.itemImageSrc"
+          [alt]="item.alt"
+          class="w-[900px] h-5/6 mt-6"
+        />
+      </ng-template>
+    </p-galleria>
+  </section>
+</body>

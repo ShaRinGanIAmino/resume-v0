@@ -1,0 +1,25 @@
+<body class="mt-6 text-xl md:text-2xl text-[#b2c8d8]">
+  <p-accordion [(value)]="expandedPanels" [multiple]="true">
+    <p-accordion-panel
+      *ngFor="let exp of experiences; let i = index"
+      [value]="i"
+    >
+      <p-accordion-header>
+        <span class="experience-header">
+          <span class="title"> {{ exp.title }} </span>
+          <br />
+          <span class="period md:text-xl text-[16px] text-gray-400">
+            {{ exp.period }}
+          </span>
+        </span>
+      </p-accordion-header>
+      <p-accordion-content>
+        <ul>
+          <li *ngFor="let detail of exp.details" class="text-[#b2c8d8]">
+            {{ detail }}
+          </li>
+        </ul>
+      </p-accordion-content>
+    </p-accordion-panel>
+  </p-accordion>
+</body>
